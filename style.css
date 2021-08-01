@@ -2,178 +2,328 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: rgb(111, 192, 18);
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(38, 22, 185, 0.87),
-      rgba(18, 18, 184, 0.911)
-    ),
-    url("https://th.bing.com/th/id/OIP.oMJNX6r8PCCrTu1gga5xFwHaDt?w=273&h=175&c=7&o=5&dpr=1.56&pid=1.7");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+
+a:hover,
+a:link,
+a:visited {
+  color: rgb(45, 9, 172);
+  text-decoration: underline;
 }
-.fixedbar {
-  box-shadow: 1px 1px 8px white, 1px 1px 8px white;
-  position: fixed;
-  z-index: 2;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  border: 1px solid black;
-  display: flex;
-  background-color: rgb(10, 20, 161);
+.logoCodef {
+  margin-top: 1rem;
+  width: 77%;
+  height: fit-content;
+  margin-left: 18rem;
 }
-.imdblogo {
+.codeforceslogo {
+  width: 30%;
+  height: 70px;
+}
+.countrylogo {
   margin-left: 4rem;
   float: left;
-  width: 10%;
-  height: 100%;
+  width: 60%;
+  text-shadow: 2px 1px 4px black;
+  height: 40px;
+  padding-left: 2rem;
 }
-.fixedbartext {
-  padding-top: 2rem;
-  padding-right: 6rem;
-  height: 100%;
-
+.text_logo {
   float: right;
-  color: wheat;
-  font-size: 4rem;
-  text-shadow: 1px 1px 2px wheat;
-}
-.form {
-  padding-top: 13rem;
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-}
-#moviename {
-  margin-right: 6rem;
-}
 
-#rating {
-  width: 10rem;
+  width: 13%;
+  height: 70px;
 }
-.btn {
-  color: black;
-  font-weight: 700;
-  background-color: rgb(130, 233, 127);
-  border-radius: 13px;
-  height: 3rem;
-  width: 6rem;
+.textRegister {
+  float: right;
+  width: 80%;
+  height: 35px;
+  padding-right: 0rem;
+  margin-left: -2rem;
+  font-size: 1.6rem;
+  margin-right: 1.1rem;
 }
-.btn:hover {
-  color: white;
-  background-color: rgb(226, 80, 12);
-  border-radius: 20px;
-  transform: scale(1.3);
-  box-shadow: 1px 1px 2px black, 1px 2px 3px black, 1px 1px 4px black;
-  transition: 0.2s ease-in-out;
+.menubar {
+  border: 2px solid rgb(112, 106, 106);
+  border-radius: 0.5rem;
+  width: 77%;
+  height: 50px;
+  padding-top: 1.4rem;
+  margin-left: 18rem;
 }
-.form li {
-  color: rgb(30, 31, 29);
-  text-shadow: 1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold,
-    1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold,
-    1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold,
-    1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold, 2px 2px 3px gold,
-    2px 2px 3px gold, 2px 2px 3px gold, 1px 1px 2px gold;
+.menubaritems li {
   list-style: none;
   float: left;
+  margin-right: 0.4rem;
+  font-size: 1.6rem;
+  font-family: Arial;
+  font-weight: 500;
+  transform: scale(0.6, 1);
+  cursor: pointer;
 }
-.tablehead {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-size: 5rem;
+.search {
+  float: right;
+  background-image: url("/images/lens.jpg");
+  background-size: 15% 100%;
+  background-repeat: no-repeat;
+  margin-right: 2rem;
+  padding-left: 2.3rem;
+  width: 08%;
+  height: 25px;
+  margin-top: -1.5rem;
 }
-.moviehead {
-  color: rgb(17, 15, 15);
-  background-color: wheat;
-  border: 1px solid red;
-  border-radius: 10px;
-  width: 30%;
-  text-align: left;
-  padding-left: 1rem;
+.menubar2 {
+  border-radius: 0.5rem;
+  width: 77%;
+  height: 50px;
+  padding-top: 1.4rem;
+  margin-left: 18rem;
+}
+.menubaritems2 li {
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 4rem;
+  list-style: none;
+  float: left;
+  margin-right: 0.1rem;
+  font-size: 1.3rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  transform: scale(0.7, 1);
+  letter-spacing: -0.1px;
 }
-.ratehead {
-  font-size: 4rem;
-  color: rgb(17, 15, 15);
-  background-color: wheat;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid red;
-  border-radius: 10px;
-  width: 30%;
-  text-align: center;
+.menubaritems2 li:hover {
+  background-color: rgb(182, 197, 193);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
-.movie {
-  font-size: 4rem;
-  color: red;
-  text-shadow: 1px 1px 2px white, 1px 1px 2px white, 1px 1px 2px white,
-    1px 1px 2px white;
-  box-shadow: 2px 2px 3px gold, 2px 2px 3px gold, 2px 2px 3px gold,
-    2px 2px 3px gold;
-  border: 1px solid red;
-  border-radius: 20px;
-  width: 30%;
-  text-align: left;
-  padding-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-family: Georgia;
+.mainbody {
+  width: 77%;
+  height: 2300px;
+  padding-top: 1.4rem;
+  margin-left: 18rem;
+  /* display: inline-flex; */
 }
-.rate {
-  font-size: 4rem;
-  color: red;
-  text-shadow: 1px 1px 2px white, 1px 1px 2px white, 1px 1px 2px white,
-    1px 1px 2px white;
-  box-shadow: 2px 2px 3px gold, 2px 2px 3px gold, 2px 2px 3px gold,
-    2px 2px 3px gold;
-  margin-top: 1rem;
+.tourist {
+  width: 73%;
+  height: 340px;
+  border: 1px solid rgb(177, 172, 172);
+}
+.touristratings {
+  margin-left: 1rem;
+}
+.boy {
+  /* border: 2px solid rgb(209, 199, 199); */
+  width: 35%;
+  height: 310px;
+  margin: -30.7rem 0 0 53.5rem;
+  background-color: rgb(215, 230, 241);
+}
+.touristlist li {
+  list-style: none;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  border: 1px solid red;
-  border-radius: 20px;
-  width: 30%;
-  text-align: center;
-  font-family: Georgia;
+}
+.touristratings {
+  width: fit-content;
+  height: fit-content;
+}
+.clear {
+  clear: both;
+}
+.payAttention {
+  float: right;
+  width: 25%;
+  border: 1px solid rgb(177, 172, 172);
+  height: 180px;
+  margin-top: -34.3rem;
 }
 
-@media only screen and (max-width: 500px) {
-  html {
-    font-size: 1px;
-  }
-  .imdblogo {
-    height: auto;
-  }
-  .fixedbartext {
-    font-size: 2.5rem;
-    padding-top: 0rem;
-  }
-  .form {
-    padding-top: 5rem;
-    height: fit-content;
-    border: 1px solid rgb(196, 29, 29);
-    display: flex;
-    justify-content: center;
-  }
-  .form li {
-    list-style: none;
-    float: unset;
-  }
-  .tablehead {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .moviehead,
-  .ratehead,
-  .movie,
-  .rate {
-    width: 45%;
-    height: fit-content;
-    font-size: 1.5rem;
-  }
+.payattentiontext {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2.2rem;
+  padding: 0 0.5rem 0 0.45rem;
+  transform: scale(1.2, 0.8);
+  border: 1px solid rgb(177, 172, 172);
+
+  text-align: center;
+  margin-top: -1rem;
+}
+.likeimg {
+  margin: 0.15rem 0 0 0.4rem;
+  width: 20%;
+  height: 20px;
+  border: 2px solid rgb(12, 11, 11);
+}
+.streams {
+  float: right;
+  width: 25%;
+  border: 1px solid rgb(177, 172, 172);
+  height: 130px;
+  margin-top: -15rem;
+}
+.streamtext {
+  width: fit-content;
+  margin-left: 2.2rem;
+  padding: 0 3.5rem 0 4rem;
+  transform: scale(1.2, 0.8);
+  border: 1px solid rgb(177, 172, 172);
+  height: fit-content;
+  text-align: center;
+  margin-top: -1rem;
+}
+.graph {
+  margin-top: 1.5rem;
+  float: float;
+  width: 73%;
+  height: 320px;
+  border: 1px solid rgb(177, 172, 172);
+}
+.onlyratedbtn {
+  float: right;
+  margin: 1rem 1rem 0 0;
+  border: 1px solid black;
+}
+.graphy {
+  margin: 6rem 0 0 1rem;
+  width: 5%;
+}
+.graphy li {
+  font-size: 1.5rem;
+  list-style: none;
+}
+.graphimg {
+  height: 80%;
+  margin: -24rem 0 0 5rem;
+}
+.graphx {
+  height: 30px;
+  width: 93%;
+  margin-left: 7rem;
+  font-size: 1.5rem;
+  /* margin-top: -10px; */
+}
+.graphx li {
+  list-style: none;
+  float: left;
+  margin-right: 2rem;
+  margin-left: 1.75rem;
+}
+.publicActivityGraph {
+  margin-top: 1.5rem;
+  float: float;
+  width: 73%;
+  height: 330px;
+  border: 1px solid rgb(177, 172, 172);
+}
+.smalltext {
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem 0 0 11rem;
+  font-size: 1.3rem;
+  width: 70%;
+}
+.months {
+  margin: 1rem 0 0 11rem;
+  font-size: 1.2rem;
+  height: 20px;
+  width: 75%;
+}
+.days {
+  /* border: 1px solid black; */
+  width: 3%;
+  margin: 2rem 0 0 8rem;
+  font-size: 1.2rem;
+}
+.listmonths li {
+  list-style: none;
+  float: left;
+  margin-right: 3.6rem;
+}
+.listdays li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.boxchart {
+  /* border: 2px solid blue; */
+  width: 80%;
+  height: 260px;
+  margin: -14rem 0 0 12.3rem;
+}
+.row {
+  width: 100%;
+  height: 100%;
+}
+/* .row > * {
+  background-color: #ebedf0;
+  border: 2px solid rgb(255, 253, 253);
+} */
+.topRated {
+  float: right;
+  width: 25%;
+  border: 1px solid rgb(177, 172, 172);
+  height: 330px;
+  margin-top: -66rem;
+}
+
+.table1 {
+  border: 1px solid rgb(177, 172, 172);
+  text-align: center;
+  font-size: 1.5rem;
+  height: fit-content;
+}
+.topContribuors {
+  float: right;
+  width: 25%;
+  border: 1px solid rgb(177, 172, 172);
+  height: 330px;
+  margin-top: -31.5rem;
+}
+.findUser {
+  float: right;
+  width: 25%;
+  border: 1px solid rgb(177, 172, 172);
+  height: 110px;
+}
+.handle {
+  margin-top: 1rem;
+  border-top: 1px solid rgb(177, 172, 172);
+  padding-top: 0.6rem;
+  font-size: 1.5rem;
+  padding-left: 4rem;
+}
+.recentActions {
+  margin-top: 13rem;
+  margin-right: -29.3rem;
+  float: right;
+  width: 25%;
+  border: 1px solid rgb(177, 172, 172);
+  height: 1000px;
+}
+.recentactionli li {
+  list-style: none;
+  margin-bottom: 0.65rem;
+  margin-left: 0.7rem;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: rgba(31, 7, 168, 0.842);
+}
+.footer {
+  border-top: 1px solid rgb(177, 172, 172);
+  width: 77%;
+  height: 280px;
+  padding-top: 1.4rem;
+  margin-left: 18rem;
+}
+.footertext {
+  margin-left: 40rem;
+  width: 33%;
+  height: fit-content;
+  font-size: 1.6rem;
+}
+.footerlogo {
+  margin: 0 0 0 42rem;
+  width: 30%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
 }
